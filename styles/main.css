@@ -1,4 +1,6 @@
 :root {
+  --background-color: #fff;
+  --color: #000;
   --social-media-icon-size: 30px;
   --social-media-icon-margin: 15px;
 }
@@ -6,6 +8,8 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  color: var(--color);
+  background-color: var(--background-color);
 }
 
 main {
@@ -48,4 +52,10 @@ main {
 .social-media a svg {
   width: var(--social-media-icon-size);
   height: var(--social-media-icon-size);
+}
+
+.ic-twitter g, 
+.ic-github, 
+.ic-linkedin {
+  fill: var(--color);
 }
