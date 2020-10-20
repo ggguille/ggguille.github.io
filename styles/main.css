@@ -4,12 +4,7 @@
 }
 
 body {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
   margin: 0;
-  justify-content: center;
-  align-items: center;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -17,6 +12,10 @@ main {
   max-width: 500px;
   padding: 8px;
   box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .title {
