@@ -1,8 +1,14 @@
 :root {
   --background-color: #fff;
-  --color: #000;
+  --color:#121212;
   --social-media-icon-size: 30px;
   --social-media-icon-margin: 15px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color:#121212;
+    --color: #fff;
+  }
 }
 
 body {
@@ -10,6 +16,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--color);
   background-color: var(--background-color);
+  transition: color 500ms ease;
 }
 
 main {
@@ -58,4 +65,5 @@ main {
 .ic-github, 
 .ic-linkedin {
   fill: var(--color);
+  transition: fill 500ms ease;
 }
