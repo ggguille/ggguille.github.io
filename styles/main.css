@@ -3,6 +3,7 @@
   --color:#121212;
   --social-media-icon-size: 30px;
   --social-media-icon-margin: 15px;
+  --theme-mode-transition: fill 500ms ease;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -61,9 +62,14 @@ main {
   height: var(--social-media-icon-size);
 }
 
-.ic-twitter g, 
+.ic-devto, 
 .ic-github, 
 .ic-linkedin {
   fill: var(--color);
-  transition: fill 500ms ease;
+  transition: var(--theme-mode-transition);
+}
+
+.ic-devto path {
+  fill: var(--background-color);
+  transition: var(--theme-mode-transition);
 }
